@@ -25,8 +25,6 @@
 		F6FC6B15230ED433003BB964 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6FC6B12230ED432003BB964 /* GoogleService-Info.plist */; };
 		F6FC6B17230ED771003BB964 /* ContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC6B16230ED771003BB964 /* ContentController.swift */; };
 		F6FC6B1D230F241D003BB964 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC6B1C230F241D003BB964 /* SignInController.swift */; };
-		F6FC6B1E230F241D003BB964 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC6B1C230F241D003BB964 /* SignInController.swift */; };
-		F6FC6B1F230F241D003BB964 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC6B1C230F241D003BB964 /* SignInController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +124,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6A4F338230F37FC007CFD06 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC6B0E230EBFB3003BB964 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F6A4F339230F37FF007CFD06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC6B09230EBF4E003BB964 /* FirstHomeController.swift */,
+				F6FC6ADA230EBC08003BB964 /* SignUpController.swift */,
+				F6FC6B1C230F241D003BB964 /* SignInController.swift */,
+				F6FC6B16230ED771003BB964 /* ContentController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F6FC6ACC230EBC08003BB964 = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +168,8 @@
 		F6FC6AD7230EBC08003BB964 /* Password */ = {
 			isa = PBXGroup;
 			children = (
-				F6FC6B1B230F0269003BB964 /* Contoller */,
-				F6FC6B0D230EBF94003BB964 /* Extensions */,
+				F6A4F339230F37FF007CFD06 /* Controller */,
+				F6A4F338230F37FC007CFD06 /* Extension */,
 				F6FC6AD8230EBC08003BB964 /* AppDelegate.swift */,
 				F6FC6AE2230EBC0A003BB964 /* Assets.xcassets */,
 				F6FC6AE4230EBC0A003BB964 /* LaunchScreen.storyboard */,
@@ -178,25 +195,6 @@
 				F6FC6AFD230EBC0A003BB964 /* Info.plist */,
 			);
 			path = PasswordUITests;
-			sourceTree = "<group>";
-		};
-		F6FC6B0D230EBF94003BB964 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F6FC6B0E230EBFB3003BB964 /* Extensions.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
-		F6FC6B1B230F0269003BB964 /* Contoller */ = {
-			isa = PBXGroup;
-			children = (
-				F6FC6B09230EBF4E003BB964 /* FirstHomeController.swift */,
-				F6FC6ADA230EBC08003BB964 /* SignUpController.swift */,
-				F6FC6B1C230F241D003BB964 /* SignInController.swift */,
-				F6FC6B16230ED771003BB964 /* ContentController.swift */,
-			);
-			name = Contoller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,7 +433,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6FC6B1E230F241D003BB964 /* SignInController.swift in Sources */,
 				F6FC6AF1230EBC0A003BB964 /* PasswordTests.swift in Sources */,
 				F6FC6B10230EBFB3003BB964 /* Extensions.swift in Sources */,
 			);
@@ -445,7 +442,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6FC6B1F230F241D003BB964 /* SignInController.swift in Sources */,
 				F6FC6AFC230EBC0A003BB964 /* PasswordUITests.swift in Sources */,
 				F6FC6B11230EBFB3003BB964 /* Extensions.swift in Sources */,
 			);
