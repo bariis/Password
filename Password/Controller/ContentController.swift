@@ -96,7 +96,6 @@ extension ContentController {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! PasswordCell
     cell.loginNameLabel.text = "Apple"
     cell.userNameLabel.text = "barujertas@gmail.com"
-    cell.passwordLabel.text = "baruj864cr7"
     return cell
   }
   
