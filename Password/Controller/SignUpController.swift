@@ -84,9 +84,8 @@ class SignUpController: UIViewController {
           print("Failed to update database values with error ",error.localizedDescription)
           return
         }
-        
         print("Successfully signed user up...")
-        
+        self.navigationController?.pushViewController(ContentController(), animated: true)
       })
       
       

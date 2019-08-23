@@ -87,6 +87,8 @@ class SignInController: UIViewController {
       }
       
       print("Succesfully logged in")
+      self.navigationController?.pushViewController(ContentController(), animated: true)
+
 
     }
   }
