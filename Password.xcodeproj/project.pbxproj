@@ -10,6 +10,9 @@
 		101AC226A724F404D523061C /* Pods_PasswordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91CC6554F486F632BDA26E0 /* Pods_PasswordTests.framework */; };
 		6438B1BCB09A223A64DF4EB9 /* Pods_Password.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01563D97064C5BB7886F5CD1 /* Pods_Password.framework */; };
 		E5E191CAC4708B19B9FE759D /* Pods_PasswordUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED68C283202EDB844574859 /* Pods_PasswordUITests.framework */; };
+		F64158DA2311CD6200B38448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F64158D92311CD6200B38448 /* GoogleService-Info.plist */; };
+		F64158DB2311CD6200B38448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F64158D92311CD6200B38448 /* GoogleService-Info.plist */; };
+		F64158DC2311CD6200B38448 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F64158D92311CD6200B38448 /* GoogleService-Info.plist */; };
 		F695356123106A4D00DD4217 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695356023106A4D00DD4217 /* ItemModel.swift */; };
 		F695356223106A4D00DD4217 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695356023106A4D00DD4217 /* ItemModel.swift */; };
 		F695356323106A4D00DD4217 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695356023106A4D00DD4217 /* ItemModel.swift */; };
@@ -66,6 +69,7 @@
 		80607EB9D4B8916E254285B1 /* Pods-PasswordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordTests.release.xcconfig"; path = "Target Support Files/Pods-PasswordTests/Pods-PasswordTests.release.xcconfig"; sourceTree = "<group>"; };
 		99092CBC4490B83B9C19DA29 /* Pods-Password.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Password.release.xcconfig"; path = "Target Support Files/Pods-Password/Pods-Password.release.xcconfig"; sourceTree = "<group>"; };
 		E91CC6554F486F632BDA26E0 /* Pods_PasswordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64158D92311CD6200B38448 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F695355A23106A0A00DD4217 /* ContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentController.swift; sourceTree = "<group>"; };
 		F695355C23106A1E00DD4217 /* FirstHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstHomeController.swift; sourceTree = "<group>"; };
 		F695355D23106A2000DD4217 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				F695357023106EED00DD4217 /* PasswordCell.swift */,
 				F6FC6AE2230EBC0A003BB964 /* Assets.xcassets */,
 				F6FC6AE4230EBC0A003BB964 /* LaunchScreen.storyboard */,
+				F64158D92311CD6200B38448 /* GoogleService-Info.plist */,
 				F6FC6AE7230EBC0A003BB964 /* Info.plist */,
 			);
 			path = Password;
@@ -333,6 +338,7 @@
 			files = (
 				F6FC6AE6230EBC0A003BB964 /* LaunchScreen.storyboard in Resources */,
 				F6FC6AE3230EBC0A003BB964 /* Assets.xcassets in Resources */,
+				F64158DA2311CD6200B38448 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64158DB2311CD6200B38448 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64158DC2311CD6200B38448 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
