@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct passwordModel {
+struct Passwords {
   
   var loginName: String
   var userName: String // e-mail etc.

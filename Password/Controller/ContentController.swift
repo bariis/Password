@@ -12,12 +12,13 @@ import Firebase
 class ContentController: UITableViewController {
   
   let cellId = "cellId"
-  var passwords: [passwordModel] = [passwordModel]()
+  var password = [Passwords]()
   
     override func viewDidLoad() {
         super.viewDidLoad()
 
       tableView.register(PasswordCell.self, forCellReuseIdentifier: cellId)
+      navigationController?.navigationBar.prefersLargeTitles = true
       authenticateUserAndConfigureView()
     }
 
@@ -34,7 +35,10 @@ class ContentController: UITableViewController {
   
   @objc func addPassword(){
     
-    navigationController?.pushViewController(AddPasswordController(), animated: true)
+    let controller = AddPasswordController()
+    controller.delegate = self
+    self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
+
     
   }
   
@@ -89,21 +93,48 @@ class ContentController: UITableViewController {
 extension ContentController {
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return password.count
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! PasswordCell
-    cell.loginNameLabel.text = "Apple"
-    cell.userNameLabel.text = "barujertas@gmail.com"
+//    cell.loginNameLabel.text = "Apple"
+//    cell.userNameLabel.text = "barujertas@gmail.com"
+    let info: Passwords
+    info = password[indexPath.row]
+    cell.setupCell(with: info)
     return cell
   }
   
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 100
+    return 60
+  }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+  
+    let selectedPassword: Passwords
+    selectedPassword = password[indexPath.row]
+    let controller = AddPasswordController()
+    self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
+   controller.setup(password: selectedPassword)
+
+  
   }
   
   
+  
+  
+}
+
+
+extension ContentController: AddPasswordDelegate {
+  
+  func addPasswords(password: Passwords) {
+    self.dismiss(animated: true) {
+      self.password.append(password)
+      self.tableView.reloadData()
+    }
+  }
   
   
 }

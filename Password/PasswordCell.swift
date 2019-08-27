@@ -34,13 +34,11 @@ class PasswordCell: UITableViewCell {
     label.font = UIFont.systemFont(ofSize: 16)
     return label
   }()
-  
-//  let passwordLabel: UILabel = {
-//    let label = UILabel()
-//    label.textColor = .gray
-//    label.font = UIFont.systemFont(ofSize: 16)
-//    return label
-//  }()
+
+  func setupCell(with user: Passwords){
+    loginNameLabel.text = user.loginName
+    userNameLabel.text = user.userName
+  }
   
   func setupComponents(){
     addSubview(loginNameLabel)
