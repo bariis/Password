@@ -20,6 +20,7 @@ class ContentController: UITableViewController {
       tableView.register(PasswordCell.self, forCellReuseIdentifier: cellId)
       navigationController?.navigationBar.prefersLargeTitles = true
       authenticateUserAndConfigureView()
+    
     }
 
   
@@ -116,9 +117,8 @@ extension ContentController {
     selectedPassword = password[indexPath.row]
     let controller = AddPasswordController()
     self.present(UINavigationController(rootViewController: controller), animated: true, completion: nil)
-   controller.setup(password: selectedPassword)
-
-  
+//    controller.setup(password: selectedPassword, i)
+      controller.setup(password: selectedPassword, index: indexPath.row)
   }
   
   
@@ -132,6 +132,7 @@ extension ContentController: AddPasswordDelegate {
   func addPasswords(password: Passwords) {
     self.dismiss(animated: true) {
       self.password.append(password)
+
       self.tableView.reloadData()
     }
   }

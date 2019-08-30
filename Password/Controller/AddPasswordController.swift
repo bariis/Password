@@ -111,23 +111,65 @@ class AddPasswordController: UIViewController {
   }
   
   // pass data when didselectrowat run
-  func setup(password: Passwords){
+  func setup(password: Passwords, index: Int){
     loginNameTextField.text = password.loginName
     nameTextField.text = password.userName
     passwordTextField.text = password.password
     notesTextView.text = password.notes
+    
+    
+//    self.delegate?.addPasswords(password: info)
   }
   
   @objc func saveData(){
     
+    guard let userId = Auth.auth().currentUser?.uid else { return }
+    let ref = Database.database().reference().child("users/\(userId)/info/\(loginNameTextField.text)")
     
-    guard let loginName = self.loginNameTextField.text else { return }
-    guard let name = self.nameTextField.text else { return }
-    guard let password = self.passwordTextField.text else { return }
+    let object = [
     
-    let info = Passwords(loginName: loginName, userName: name, password: password, notes: self.notesTextView.text)
-    self.delegate?.addPasswords(password: info)
-    self.dismiss(animated: true, completion: nil)
+        "name" : nameTextField.text,
+        "passw" : passwordTextField.text,
+        "notes" : notesTextView.text
+      
+    ] as [String:Any]
+      
+
+    
+    ref.setValue(object) { (error, ref) in
+      if error == nil {
+        
+        guard let loginName = self.loginNameTextField.text else { return }
+        guard let name = self.nameTextField.text else { return }
+        guard let password = self.passwordTextField.text else { return }
+        
+        let info = Passwords(loginName: loginName, userName: name, password: password, notes: self.notesTextView.text)
+        
+        print(loginName)
+        print(name)
+        print(password)
+        
+       
+        self.delegate?.addPasswords(password: info)
+        
+        
+        
+        self.dismiss(animated: true, completion: nil)
+      }else {
+        print(error)
+      }
+    }
+    
+    
+//    guard let loginName = self.lo0ginNameTextField.text else { return }
+//    guard let name = self.nameTextField.text else { return }
+//    guard let password = self.passwordTextField.text else { return }
+//
+//
+//
+//    let info = Passwords(loginName: loginName, userName: name, password: password, notes: self.notesTextView.text)
+//    self.delegate?.addPasswords(password: info)
+//    self.dismiss(animated: true, completion: nil)
     
     }
     

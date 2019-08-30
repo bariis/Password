@@ -34,6 +34,9 @@
 		F695357523106F6F00DD4217 /* AddPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695357423106F6F00DD4217 /* AddPasswordController.swift */; };
 		F695357623106F6F00DD4217 /* AddPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695357423106F6F00DD4217 /* AddPasswordController.swift */; };
 		F695357723106F6F00DD4217 /* AddPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F695357423106F6F00DD4217 /* AddPasswordController.swift */; };
+		F6AF7B3F2319983C008EE756 /* coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6AF7B3D2319983C008EE756 /* coredata.xcdatamodeld */; };
+		F6AF7B402319983C008EE756 /* coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6AF7B3D2319983C008EE756 /* coredata.xcdatamodeld */; };
+		F6AF7B412319983C008EE756 /* coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6AF7B3D2319983C008EE756 /* coredata.xcdatamodeld */; };
 		F6FC6AD9230EBC08003BB964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC6AD8230EBC08003BB964 /* AppDelegate.swift */; };
 		F6FC6AE3230EBC0A003BB964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6FC6AE2230EBC0A003BB964 /* Assets.xcassets */; };
 		F6FC6AE6230EBC0A003BB964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FC6AE4230EBC0A003BB964 /* LaunchScreen.storyboard */; };
@@ -42,6 +45,9 @@
 		F6FC6B0F230EBFB3003BB964 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC6B0E230EBFB3003BB964 /* Extensions.swift */; };
 		F6FC6B10230EBFB3003BB964 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC6B0E230EBFB3003BB964 /* Extensions.swift */; };
 		F6FC6B11230EBFB3003BB964 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC6B0E230EBFB3003BB964 /* Extensions.swift */; };
+		F6FCB8282316B93E0036957C /* FirebaseUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FCB8272316B93E0036957C /* FirebaseUpdate.swift */; };
+		F6FCB8292316B93E0036957C /* FirebaseUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FCB8272316B93E0036957C /* FirebaseUpdate.swift */; };
+		F6FCB82A2316B93E0036957C /* FirebaseUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FCB8272316B93E0036957C /* FirebaseUpdate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,7 @@
 		F695356023106A4D00DD4217 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		F695357023106EED00DD4217 /* PasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCell.swift; sourceTree = "<group>"; };
 		F695357423106F6F00DD4217 /* AddPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordController.swift; sourceTree = "<group>"; };
+		F6AF7B3E2319983C008EE756 /* coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coredata.xcdatamodel; sourceTree = "<group>"; };
 		F6EAB32932B1FEC8C0F903EA /* Pods-PasswordUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordUITests.release.xcconfig"; path = "Target Support Files/Pods-PasswordUITests/Pods-PasswordUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F6FC6AD5230EBC08003BB964 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FC6AD8230EBC08003BB964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 		F6FC6AFB230EBC0A003BB964 /* PasswordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUITests.swift; sourceTree = "<group>"; };
 		F6FC6AFD230EBC0A003BB964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6FC6B0E230EBFB3003BB964 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F6FCB8272316B93E0036957C /* FirebaseUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUpdate.swift; sourceTree = "<group>"; };
 		FCE6FB6D514C1EC5ED7379A6 /* Pods-PasswordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordTests.debug.xcconfig"; path = "Target Support Files/Pods-PasswordTests/Pods-PasswordTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +160,8 @@
 				F695355E23106A2200DD4217 /* SignUpController.swift */,
 				F695355A23106A0A00DD4217 /* ContentController.swift */,
 				F695357423106F6F00DD4217 /* AddPasswordController.swift */,
+				F6AF7B3D2319983C008EE756 /* coredata.xcdatamodeld */,
+				F6FCB8272316B93E0036957C /* FirebaseUpdate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -451,9 +461,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AF7B3F2319983C008EE756 /* coredata.xcdatamodeld in Sources */,
 				F695357123106EED00DD4217 /* PasswordCell.swift in Sources */,
 				F695356123106A4D00DD4217 /* ItemModel.swift in Sources */,
 				F695356A23106D8700DD4217 /* ContentController.swift in Sources */,
+				F6FCB8282316B93E0036957C /* FirebaseUpdate.swift in Sources */,
 				F695357523106F6F00DD4217 /* AddPasswordController.swift in Sources */,
 				F695356D23106D8C00DD4217 /* SignUpController.swift in Sources */,
 				F695356423106D7F00DD4217 /* FirstHomeController.swift in Sources */,
@@ -467,9 +479,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AF7B402319983C008EE756 /* coredata.xcdatamodeld in Sources */,
 				F695357223106EED00DD4217 /* PasswordCell.swift in Sources */,
 				F695356223106A4D00DD4217 /* ItemModel.swift in Sources */,
 				F695356B23106D8700DD4217 /* ContentController.swift in Sources */,
+				F6FCB8292316B93E0036957C /* FirebaseUpdate.swift in Sources */,
 				F695357623106F6F00DD4217 /* AddPasswordController.swift in Sources */,
 				F695356E23106D8C00DD4217 /* SignUpController.swift in Sources */,
 				F695356523106D8000DD4217 /* FirstHomeController.swift in Sources */,
@@ -483,9 +497,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AF7B412319983C008EE756 /* coredata.xcdatamodeld in Sources */,
 				F695357323106EED00DD4217 /* PasswordCell.swift in Sources */,
 				F695356323106A4D00DD4217 /* ItemModel.swift in Sources */,
 				F695356C23106D8800DD4217 /* ContentController.swift in Sources */,
+				F6FCB82A2316B93E0036957C /* FirebaseUpdate.swift in Sources */,
 				F695357723106F6F00DD4217 /* AddPasswordController.swift in Sources */,
 				F695356F23106D8D00DD4217 /* SignUpController.swift in Sources */,
 				F695356623106D8100DD4217 /* FirstHomeController.swift in Sources */,
@@ -802,6 +818,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6AF7B3D2319983C008EE756 /* coredata.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6AF7B3E2319983C008EE756 /* coredata.xcdatamodel */,
+			);
+			currentVersion = F6AF7B3E2319983C008EE756 /* coredata.xcdatamodel */;
+			path = coredata.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F6FC6ACD230EBC08003BB964 /* Project object */;
 }
